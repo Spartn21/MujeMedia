@@ -11,19 +11,13 @@ export default function Layout({ children }) {
       </Head>
       <header className="bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to p-6 text-white">
         <nav className="container mx-auto flex justify-between items-center">
-          <Link href="/">
-            <a className="text-2xl font-bold">Muje Media</a>
+          <Link href="/" className="text-2xl font-bold">
+            Muje Media
           </Link>
           <div className="flex space-x-4">
-            <Link href="/about">
-              <a>About Us</a>
-            </Link>
-            <Link href="/services">
-              <a>Services</a>
-            </Link>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/contact">Contact</Link>
           </div>
         </nav>
       </header>
