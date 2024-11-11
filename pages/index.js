@@ -1,6 +1,8 @@
 // pages/index.js
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import Image from 'next/image';
+import Button from '../components/Button';
+import TestimonialCard from '../components/TestimonialCard';
 import logo from '../public/White_ExoTransparent_MMlogo.png';
 
 export default function Home() {
@@ -12,9 +14,9 @@ export default function Home() {
           <Image src={logo} alt="Muje Media Logo" width={200} height={200} className="mx-auto" />
           <h1 className="text-5xl font-bold">Empowering Your Digital Presence</h1>
           <p className="text-xl">Unlock growth with tailored social media solutions.</p>
-          <a href="/contact" className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full">
+          <Button href="/contact" className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full">
             Get in Touch
-          </a>
+          </Button>
         </div>
       </section>
 
@@ -30,7 +32,7 @@ export default function Home() {
             <div className="p-6 bg-white shadow-lg rounded-lg fade-in-up">
               <h3 className="text-2xl font-semibold text-primaryGradient-to">Content Creation</h3>
               <p className="mt-4 text-gray-600">
-                Customized post designs, video edits, and more to captivate your audience.
+                Captivate your audience with customized post designs, video edits, and compelling visuals.
               </p>
             </div>
 
@@ -38,7 +40,7 @@ export default function Home() {
             <div className="p-6 bg-white shadow-lg rounded-lg fade-in-up">
               <h3 className="text-2xl font-semibold text-primaryGradient-to">Engagement Activities</h3>
               <p className="mt-4 text-gray-600">
-                From Google reviews to influencer partnerships, we help you reach and engage the right audience.
+                From Google reviews to influencer partnerships, we connect you with the right audience.
               </p>
             </div>
 
@@ -46,10 +48,43 @@ export default function Home() {
             <div className="p-6 bg-white shadow-lg rounded-lg fade-in-up">
               <h3 className="text-2xl font-semibold text-primaryGradient-to">ROI-Driven Growth</h3>
               <p className="mt-4 text-gray-600">
-                Strategies backed by AI and industry trends to deliver measurable results.
+                We use AI and the latest trends to create strategies that deliver measurable results.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-8">What Our Clients Say</h2>
+          <p className="text-lg text-gray-600 mb-12">
+            Don't just take our word for it—see what our clients have to say about working with us.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TestimonialCard
+              quote="Muje Media has transformed our online presence. Their engagement strategy brought in a flood of new followers and interactions."
+              author="John Doe, CEO of Local Biz"
+            />
+            <TestimonialCard
+              quote="We saw measurable growth in our business thanks to Muje Media’s dedication and strategic approach."
+              author="Jane Smith, Marketing Director of Global Co"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to text-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Grow Your Brand?</h2>
+          <p className="text-lg mb-8">
+            Let Muje Media take your digital presence to the next level. Contact us today!
+          </p>
+          <Button href="../contact" className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full">
+            Contact Us
+          </Button>
         </div>
       </section>
     </Layout>
