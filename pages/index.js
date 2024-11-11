@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to">
+      <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to fade-in">
         <div className="text-center text-white space-y-8">
           <Image src={logo} alt="Muje Media Logo" width={200} height={200} className="mx-auto" />
           <h1 className="text-5xl font-bold">Empowering Your Digital Presence</h1>
@@ -21,7 +21,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16 bg-gray-100 fade-in">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">Our Services</h2>
           <p className="text-lg text-gray-600 mb-12">
@@ -29,7 +29,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Service 1 */}
-            <div className="p-6 bg-white shadow-lg rounded-lg fade-in-up">
+            <div className="p-6 bg-white shadow-lg rounded-lg fade-in">
               <h3 className="text-2xl font-semibold text-primaryGradient-to">Content Creation</h3>
               <p className="mt-4 text-gray-600">
                 Captivate your audience with customized post designs, video edits, and compelling visuals.
@@ -37,7 +37,7 @@ export default function Home() {
             </div>
 
             {/* Service 2 */}
-            <div className="p-6 bg-white shadow-lg rounded-lg fade-in-up">
+            <div className="p-6 bg-white shadow-lg rounded-lg fade-in">
               <h3 className="text-2xl font-semibold text-primaryGradient-to">Engagement Activities</h3>
               <p className="mt-4 text-gray-600">
                 From Google reviews to influencer partnerships, we connect you with the right audience.
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
 
             {/* Service 3 */}
-            <div className="p-6 bg-white shadow-lg rounded-lg fade-in-up">
+            <div className="p-6 bg-white shadow-lg rounded-lg fade-in">
               <h3 className="text-2xl font-semibold text-primaryGradient-to">ROI-Driven Growth</h3>
               <p className="mt-4 text-gray-600">
                 We use AI and the latest trends to create strategies that deliver measurable results.
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white fade-in">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">What Our Clients Say</h2>
           <p className="text-lg text-gray-600 mb-12">
@@ -76,13 +76,13 @@ export default function Home() {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to text-white">
+      <section className="py-16 bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to text-white fade-in">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Grow Your Brand?</h2>
           <p className="text-lg mb-8">
             Let Muje Media take your digital presence to the next level. Contact us today!
           </p>
-          <Button href="../contact" className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full">
+          <Button href="/contact" className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full">
             Contact Us
           </Button>
         </div>

@@ -21,16 +21,16 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex justify-center mt-4 md:mt-0 space-x-4">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+          <a href="https://facebook.com/profile.php?id=61567338897296" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaFacebook size={24} />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+          <a href="https://twitter.com/MujeMedia/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaTwitter size={24} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+          <a href="https://instagram.com/muje.media/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaInstagram size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+          <a href="https://linkedin.com/company/105382474" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaLinkedin size={24} />
           </a>
         </div>
