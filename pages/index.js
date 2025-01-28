@@ -22,7 +22,7 @@ export default function Home() {
           <div className="mt-6">
             <Button
               href="/contact"
-              className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
+              className="px-6 py-3  font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
             >
               Get in Touch
             </Button>
@@ -95,7 +95,7 @@ export default function Home() {
           <p className="text-lg md:text-xl lg:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed">
             Let Muje Media take your digital presence to the next level. Contact us today!
           </p>
-          <Button href="/contact" className="px-10 py-4 bg-white text-primaryGradient-to font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+          <Button href="/contact" className="px-10 py-4 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
             Contact Us
           </Button>
         </div>
