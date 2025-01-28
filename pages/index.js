@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-green-900 opacity-60"></div>
-        <div className="text-center text-white space-y-8 relative z-10 animate-fadeIn">
+        <div className="text-center text-white space-y-6 relative z-10 animate-fadeIn">
           <Image src={logo} alt="Muje Media Logo" width={200} height={200} className="mx-auto animate-pulse" />
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-slideIn">
             Empowering Your Digital Presence
@@ -19,12 +19,14 @@ export default function Home() {
           <p className="text-xl md:text-2xl lg:text-3xl max-w-xl mx-auto opacity-90">
             Unlock growth with tailored social media solutions.
           </p>
-          <Button
-            href="/contact"
-            className="px-6 py-3 mt-4 bg-white text-primaryGradient-to font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
-          >
-            Get in Touch
-          </Button>
+          <div className="mt-6">
+            <Button
+              href="/contact"
+              className="px-6 py-3 bg-white text-primaryGradient-to font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
+            >
+              Get in Touch
+            </Button>
+          </div>
         </div>
       </section>
 
