@@ -19,7 +19,10 @@ export default function Home() {
           <p className="text-xl md:text-2xl lg:text-3xl max-w-xl mx-auto opacity-90">
             Unlock growth with tailored social media solutions.
           </p>
-          <Button href="/contact" className="px-8 py-4 bg-white text-primaryGradient-to font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+          <Button
+            href="/contact"
+            className="px-6 py-3 mt-4 bg-white text-primaryGradient-to font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
+          >
             Get in Touch
           </Button>
         </div>
