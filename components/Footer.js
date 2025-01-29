@@ -1,5 +1,6 @@
 // components/Footer.js
 import Link from 'next/link';
+import Image from 'next/image'; // Import Image from Next.js
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
@@ -10,15 +11,9 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Muje Media. All rights reserved.</p>
         </div>
         <div className="flex justify-center space-x-6">
-          <Link href="/about" className="hover:underline">
-            About Us
-          </Link>
-          <Link href="/services" className="hover:underline">
-            Services
-          </Link>
-          <Link href="/contact" className="hover:underline">
-            Contact
-          </Link>
+          <Link href="/about" className="hover:text-gray-400">About Us</Link>
+          <Link href="/services" className="hover:text-gray-400">Services</Link>
+          <Link href="/contact" className="hover:text-gray-400">Contact</Link>
         </div>
         <div className="flex justify-center mt-4 md:mt-0 space-x-4">
           <a href="https://facebook.com/profile.php?id=61567338897296" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
@@ -34,6 +29,10 @@ export default function Footer() {
             <FaLinkedin size={24} />
           </a>
         </div>
+      </div>
+      {/* Refrens Invoicing Badge */}
+      <div className="flex justify-center mt-6">
+        <Image src="/refrens.png" alt="Invoicing Powered by Refrens.com" width={150} height={50} />
       </div>
     </footer>
   );
