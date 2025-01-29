@@ -1,7 +1,8 @@
 // components/Footer.js
 import Link from 'next/link';
 import Image from 'next/image'; // Import Image from Next.js
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTiktok } from 'react-icons/fa';
+import { PiXBold } from 'react-icons/pi'; // X (formerly Twitter) icon
 
 export default function Footer() {
   return (
@@ -15,18 +16,25 @@ export default function Footer() {
           <Link href="/services" className="hover:text-gray-400">Services</Link>
           <Link href="/contact" className="hover:text-gray-400">Contact</Link>
         </div>
+        {/* Social Icons */}
         <div className="flex justify-center mt-4 md:mt-0 space-x-4">
           <a href="https://facebook.com/profile.php?id=61567338897296" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaFacebook size={24} />
           </a>
-          <a href="https://twitter.com/MujeMedia/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
-            <FaTwitter size={24} />
+          <a href="https://x.com/MujeMedia/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+            <PiXBold size={24} /> {/* X (Twitter) Icon */}
           </a>
           <a href="https://instagram.com/muje.media/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaInstagram size={24} />
           </a>
           <a href="https://linkedin.com/company/105382474" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaLinkedin size={24} />
+          </a>
+          <a href="https://www.youtube.com/@MUJEMedia" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+            <FaYoutube size={24} />
+          </a>
+          <a href="https://www.tiktok.com/@mujemedia" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
+            <FaTiktok size={24} />
           </a>
         </div>
       </div>
