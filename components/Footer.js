@@ -40,7 +40,9 @@ export default function Footer() {
       </div>
       {/* Refrens Invoicing Badge */}
       <div className="flex justify-center mt-6">
-        <Image src="/refrens.png" alt="Invoicing Powered by Refrens.com" width={150} height={50} />
+        <a href="https://www.refrens.com/en/free-online-invoice-generator">
+          <Image src="/refrens.png" alt="Invoicing Powered by Refrens.com" width={150} height={50} />
+        </a>
       </div>
     </footer>
   );
