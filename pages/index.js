@@ -75,12 +75,12 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <TestimonialCard
               quote="Muje Media has transformed our online presence. Their engagement strategy brought in a flood of new followers and interactions."
-              author="John Doe, CEO of Local Biz"
+              author="Allan, CEO of Talkio Mobile"
               className="hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
             />
             <TestimonialCard
               quote="We saw measurable growth in our business thanks to Muje Media’s dedication and strategic approach."
-              author="Jane Smith, Marketing Director of Global Co"
+              author="Judith Owembabzi, CEO of Check In Africa Initiative"
               className="hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
             />
           </div>
