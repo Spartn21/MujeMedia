@@ -53,3 +53,19 @@ body {
 button {
   color: inherit; 
 }
+
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.animate-scroll {
+  animation: scrollUp 20s linear infinite;
+}
+
+.logo-container img {
+  background-color: white;
+  border-radius: 6px;
+  padding: 5px;
+}

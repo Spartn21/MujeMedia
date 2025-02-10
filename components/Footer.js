@@ -1,6 +1,6 @@
 // components/Footer.js
 import Link from 'next/link';
-import Image from 'next/image'; // Import Image from Next.js
+import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaTiktok } from 'react-icons/fa';
 import { PiXBold } from 'react-icons/pi'; // X (formerly Twitter) icon
 
@@ -15,14 +15,20 @@ export default function Footer() {
           <Link href="/about" className="hover:text-gray-400">About Us</Link>
           <Link href="/services" className="hover:text-gray-400">Services</Link>
           <Link href="/contact" className="hover:text-gray-400">Contact</Link>
+          
+          {/* Hidden Engagement Report Link */}
+          <Link href="/engagement-report" className="text-xs opacity-10 hover:opacity-100 transition-opacity duration-300">
+            Engagement Report
+          </Link>
         </div>
+        
         {/* Social Icons */}
         <div className="flex justify-center mt-4 md:mt-0 space-x-4">
           <a href="https://facebook.com/profile.php?id=61567338897296" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaFacebook size={24} />
           </a>
           <a href="https://x.com/MujeMedia/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
-            <PiXBold size={24} /> {/* X (Twitter) Icon */}
+            <PiXBold size={24} />
           </a>
           <a href="https://instagram.com/muje.media/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primaryGradient-to">
             <FaInstagram size={24} />
@@ -38,6 +44,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
+
       {/* Refrens Invoicing Badge */}
       <div className="flex justify-center mt-6">
         <a href="https://www.refrens.com/en/free-online-invoice-generator">
