@@ -10,7 +10,21 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative flex items-center justify-center h-screen bg-gradient-to-r from-primaryGradient-from to-primaryGradient-to overflow-hidden">
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-green-900 opacity-60"></div>
+        
+        {/* Transparent Background Image */}
+        <div className="absolute inset-0 flex justify-center items-center opacity-20">
+          <Image 
+            src="/hero.png" // Ensure this image is in the public folder
+            alt="Background Design"
+            layout="fill" // Makes sure it covers the entire section
+            objectFit="cover" // Ensures the image scales well
+            className="z-0"
+          />
+        </div>
+
+        {/* Main Content */}
         <div className="text-center text-white space-y-6 relative z-10 animate-fadeIn">
           <Image src={logo} alt="Muje Media Logo" width={200} height={200} className="mx-auto animate-pulse" />
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-slideIn">
@@ -21,14 +35,15 @@ export default function Home() {
           </p>
           <div className="mt-6">
             <Button
-              href="/contact"
-              className="px-6 py-3  font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
+              href="/waitlist"
+              className="px-6 py-3 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
             >
-              Get in Touch
+              Apply to join the photography waitlist
             </Button>
           </div>
         </div>
       </section>
+
 
       {/* Services Section */}
       <section className="py-20 bg-gray-100">
