@@ -12,7 +12,7 @@ export default function January100Elite() {
 
       <section className="min-h-screen bg-gray-100 py-10 px-6 md:px-12 lg:px-20 text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4 animate-fadeIn">
-          January 100 Elite Engagement Report | Leaderboard
+          February 2025 100 Elite Engagement Report | Leaderboard
         </h1>
         <p className="text-lg text-gray-600 mb-8 animate-fadeIn">
           A breakdown of daily engagement athroughout the month of January.
