@@ -6,7 +6,7 @@ export default function January100Elite() {
   return (
     <Layout>
       <Head>
-        <title>January 100 Elite Engagement Report | Muje Media</title>
+        <title>February 2025 100 Elite Engagement Report | Muje Media</title>
         <meta name="description" content="Engagement report for January's 100 Elite Team at Muje Media." />
       </Head>
 
@@ -20,7 +20,13 @@ export default function January100Elite() {
 
         {/* Embed the report */}
         <div className="relative w-full max-w-5xl mx-auto bg-white p-4 md:p-6 rounded-lg shadow-lg border border-gray-300 animate-slideUp">
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQz8U85W0av-iOdShcLbMTpM8LCukinm-T1jaRRji3idb0DcZUvUzmyK54As-Pf2KAYD1cq6kywXSup/pubhtml?gid=1399987910&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+          <iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQz8U85W0av-iOdShcLbMTpM8LCukinm-T1jaRRji3idb0DcZUvUzmyK54As-Pf2KAYD1cq6kywXSup/pubhtml?gid=1399987910&amp;single=true&amp;widget=true&amp;headers=false"
+            width="100%"
+            height="600px"
+            className="w-full h-[600px] rounded-md border border-gray-200"
+            title="Embedded Google Sheet"
+          ></iframe>
         </div>
       </section>
     </Layout>
