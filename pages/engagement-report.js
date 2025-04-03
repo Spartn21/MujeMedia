@@ -20,11 +20,7 @@ export default function January100Elite() {
 
         {/* Embed the report */}
         <div className="relative w-full max-w-5xl mx-auto bg-white p-4 md:p-6 rounded-lg shadow-lg border border-gray-300 animate-slideUp">
-          <iframe
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa2UksRnORy-0FOYxXJaOZ2CwgeX4qlc7aPLt6wIupU9P9yj57nB_Lm900m2unZ7cH1ACCfBKg7cxw/pubhtml?gid=1956740339&amp;single=true&amp;widget=true&amp;headers=false"
-            className="w-full h-[80vh] md:h-[85vh] rounded-lg border border-gray-400"
-            title="January 100 Elite Engagement Report"
-          ></iframe>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQz8U85W0av-iOdShcLbMTpM8LCukinm-T1jaRRji3idb0DcZUvUzmyK54As-Pf2KAYD1cq6kywXSup/pubhtml?gid=1399987910&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
         </div>
       </section>
     </Layout>
